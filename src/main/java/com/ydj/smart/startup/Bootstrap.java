@@ -1,6 +1,8 @@
 package com.ydj.smart.startup;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,8 +19,9 @@ import java.io.PrintStream;
 *
  */
 @EnableAutoConfiguration
-@ComponentScan("com.ydj.smart.*")
+@ComponentScan(basePackages = "com.ydj.smart.*")
 @RestController("/")
+@SpringBootApplication
 public class Bootstrap extends WebMvcConfigurerAdapter {
 
     /**
@@ -43,6 +46,7 @@ public class Bootstrap extends WebMvcConfigurerAdapter {
             }
         });
         new SpringApplicationBuilder(Bootstrap.class).run(args);
+//        SpringApplication.run(Bootstrap.class,args);
     }
 
 }

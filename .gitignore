@@ -1,0 +1,22 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+logs/
+target
+bin
+.classpath
+.project
+.settings
+.springBeans
+.ant-targets-build.xml
+src/ant/.ant-targets-upload-dist.xml
+*.swp
+*/src/main/java/META-INF
+*/src/main/webapp/META-INF
+erl_crash.dump
+nohup.out
+jredis.log
+*.iml
+*.ipr
+*.iws
+.idea/
+.DS_Store

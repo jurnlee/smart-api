@@ -64,10 +64,10 @@ public class MongoDBFactory implements FactoryBean<Object> {
 
 	private void config() {
 		MongoOptions op = mongo.getMongoOptions();
-		op.setAutoConnectRetry(autoConnectRetry);
+//		op.setAutoConnectRetry(autoConnectRetry);
 		op.setConnectTimeout(connectTimeout);
 		op.setMaxWaitTime(maxWaitTime);
-		op.setMaxAutoConnectRetryTime(maxAutoConnectRetryTime);
+//		op.setMaxAutoConnectRetryTime(maxAutoConnectRetryTime);
 		op.setSocketKeepAlive(socketKeepAlive);
 		op.setSocketTimeout(socketTimeout);
 	}

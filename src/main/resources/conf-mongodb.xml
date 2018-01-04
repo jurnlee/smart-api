@@ -33,7 +33,7 @@
     </bean>    
 
     <bean id="mongo" class="com.mongodb.Mongo">
-        <constructor-arg  index="0" type="String" value="${db.mongo.host}"/> 
+        <constructor-arg index="0" type="java.lang.String" value="${db.mongo.host}"/>
         <constructor-arg  index="1" type="int" value="${db.mongo.port}"/>
     </bean>
 
